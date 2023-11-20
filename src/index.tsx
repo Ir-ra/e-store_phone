@@ -1,11 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import { App } from './App';
+import { HashRouter } from 'react-router-dom';
+
+import App from './App';
+import { ProductsProvider } from './context/ProductContext';
+import CartProvider from './context/CartContext';
+import FavouritesProvider from './context/FavsContext';
+import { QueryProvider } from './context/QueryContext';
+import { PageProvider } from './context/PageContext';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <HashRouter>
+    <ProductsProvider>
+      <CartProvider>
+        <FavouritesProvider>
+          <PageProvider>
+            <QueryProvider>
+              <App />
+            </QueryProvider>
+          </PageProvider>
+        </FavouritesProvider>
+      </CartProvider>
+    </ProductsProvider>
+  </HashRouter>,
   document.getElementById('root'),
 );

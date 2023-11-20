@@ -1,9 +1,25 @@
-# React TypeScript Starter Pack
+# Phones catalog E-store 
 
-To use this template click `Use this template`
+Mock concept for online shopping. Features multiple shopping categories and products for purchase, has a cart screen to display all products ready for checkout and favourite items screen.
+Implemented responsive template for desktop computers, tablets and mobile devices.
 
-### Available Scripts
+## DEMO
+[DEMO LINK](https://Ir-ra.github.io/e-store_phone/)
 
-`Deploy` - available to deploy your application to gh-pages
+## Mockup link
+[mockup](https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?node-id=1%3A2&mode=dev)
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+## Screenshots
+![screenshots](./src/screenShots/Screenshot_2.png)
+![screenshots](./src/screenShots/Screenshot_4.png)
+![screenshots](./src/screenShots/Screenshot_5.png)
+![screenshots](./src/screenShots/Screenshot_6.png)
+![screenshots](./src/screenShots/Screenshot_8.png)
+
+
+## Technologies
+
+Project is created with:
+* React
+* Type Script
+* SCSS Preprocessor
