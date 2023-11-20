@@ -32,7 +32,7 @@ export const SearchForm = () => {
 
   return (
     <form className="search">
-      <label className="search__bar">
+      <label className="search__bar" htmlFor="query">
         <input
           className="search__input"
           type="search"
