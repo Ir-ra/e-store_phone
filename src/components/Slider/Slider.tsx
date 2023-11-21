@@ -3,9 +3,9 @@ import classNames from 'classnames';
 
 export const Slider: React.FC = () => {
   const [images] = useState<string[]>([
-    'accessories.png',
     'phones.png',
     'tablets.png',
+    'accessories.png',
   ]);
 
   const [currIndex, setCurrIndex] = useState(0);

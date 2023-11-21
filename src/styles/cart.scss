@@ -88,6 +88,11 @@
     }
   }
 
+  &__start-info {
+    display: flex;
+    align-items: center;
+  }
+
   &__image-block {
     display: flex;
     align-items: center;
@@ -131,6 +136,7 @@
     display: flex;
     align-items: center;
     gap: 13px;
+    margin-left: 5px;
   }
 
   &__quantity-minus {
