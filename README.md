@@ -7,9 +7,6 @@ Implemented responsive template for desktop computers, tablets and mobile device
 [DEMO LINK](https://Ir-ra.github.io/e-store_phone/)
 
 
-https://github.com/Ir-ra/e-store_phone/assets/110158698/7642e3d3-2965-4f39-a25b-71bad4048fbb
-
-
 ## Mockup link
 [mockup](https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?node-id=1%3A2&mode=dev)
 
@@ -20,7 +17,6 @@ Project is created with:
 * SCSS Preprocessor
   
 ## Screenshots
-![screenshots](./src/screenShots/Screenshot_2.png)
+https://github.com/Ir-ra/e-store_phone/assets/110158698/7642e3d3-2965-4f39-a25b-71bad4048fbb
 ![screenshots](./src/screenShots/Screenshot_4.png)
 ![screenshots](./src/screenShots/Screenshot_5.png)
-![screenshots](./src/screenShots/Screenshot_6.png)
