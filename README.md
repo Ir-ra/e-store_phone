@@ -20,4 +20,3 @@ Project is created with:
 ![screenshots](./src/screenShots/Screenshot_4.png)
 ![screenshots](./src/screenShots/Screenshot_5.png)
 ![screenshots](./src/screenShots/Screenshot_6.png)
-![screenshots](./src/screenShots/Screenshot_8.png)
