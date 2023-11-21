@@ -14,27 +14,34 @@ export const Cart = () => {
     minusItem,
   } = useContext(CartContext);
 
+  const handleCheckoutClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setMessage(true);
+  };
+
   return (
     <>
       <div className="cart__items-container">
         {cartItems.map(item => (
           <div key={item.id} className="cart__item">
             <div className="cart__item-info">
-              <button
-                type="button"
-                className="cart__item-delete"
-                data-cy="cartDeleteButton"
-                onClick={() => removeFromCart(item)}
-              >
-                <div className="cart__item-delete--cross" />
-              </button>
+              <div className="cart__start-info">
+                <button
+                  type="button"
+                  className="cart__item-delete"
+                  data-cy="cartDeleteButton"
+                  onClick={() => removeFromCart(item)}
+                >
+                  <div className="cart__item-delete--cross" />
+                </button>
 
-              <div className="cart__image-block">
-                <img
-                  src={`./new/${item.product.image}`}
-                  alt={item.product.name}
-                  className="cart__image-block--img"
-                />
+                <div className="cart__image-block">
+                  <img
+                    src={`./new/${item.product.image}`}
+                    alt={item.product.name}
+                    className="cart__image-block--img"
+                  />
+                </div>
               </div>
 
               <Link
@@ -54,7 +61,7 @@ export const Cart = () => {
                   <div className={classNames('cart__quantity-minus--minus',
                     {
                       'cart__quantity-minus--minus-disabled':
-                      item.quantity === 1,
+                        item.quantity === 1,
                     })}
                   />
                 </button>
@@ -91,7 +98,7 @@ export const Cart = () => {
           <button
             type="button"
             className="cart__checkout-btn"
-            onClick={() => setMessage(true)}
+            onClick={handleCheckoutClick}
           >
             <p className="cart__checkout-btn--text">Checkout</p>
           </button>
