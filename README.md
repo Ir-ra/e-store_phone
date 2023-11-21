@@ -17,6 +17,8 @@ Project is created with:
 * SCSS Preprocessor
   
 ## Screenshots
-https://github.com/Ir-ra/e-store_phone/assets/110158698/7642e3d3-2965-4f39-a25b-71bad4048fbb
 ![screenshots](./src/screenShots/Screenshot_4.png)
 ![screenshots](./src/screenShots/Screenshot_5.png)
+
+https://github.com/Ir-ra/e-store_phone/assets/110158698/74dc93af-f529-4ac6-a6f5-187aad87b713
+
