@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
 import { ProductDetails } from '../types/ProductDetails';
-import { Loader } from '../components/Loader/Loader';
 import { Breadcrumbs } from '../components/Breadcrumbs/Breadcrumbs';
 import { SuggestedProducts } from '../components/SuggestedProducts/SuggestedProducts';
 import { Details } from '../components/Details/Details';
@@ -15,7 +14,6 @@ export const ProductDetailsPage = () => {
   const { pathname } = useLocation();
   const { itemId } = useParams();
   const [product, setProduct] = useState<ProductDetails | null>(null);
-  const [loading, setLoading] = useState(false);
   const [currentImage, setCurrentImage] = useState('');
   const [currentCapacity, setCurrentCapacity] = useState('');
   const [currentColor, setCurrentColor] = useState('');
@@ -33,7 +31,6 @@ export const ProductDetailsPage = () => {
   }, [itemId]);
 
   useEffect(() => {
-    setLoading(true);
     setIsError(false);
 
     getItemInfo(itemId)
@@ -41,8 +38,7 @@ export const ProductDetailsPage = () => {
         setProduct(productInfo);
         setCurrentImage(productInfo.images[0]);
       })
-      .catch(() => setIsError(true))
-      .finally(() => setLoading(false));
+      .catch(() => setIsError(true));
   }, [itemId]);
 
   useEffect(() => {
@@ -63,13 +59,12 @@ export const ProductDetailsPage = () => {
       <Breadcrumbs pathname={pathLink} name={product?.name || ''} />
       <GoBackButton />
 
-      {loading && <Loader />}
       {isError && (
         <h2 className="noResults">
           Sorry, there is no phone with a given Id on the server.
         </h2>
       )}
-      {!loading && !isError && product && (
+      {!isError && product && (
         <>
           <Details
             product={product}

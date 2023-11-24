@@ -24,10 +24,16 @@ export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    if (!isOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
   };
 
   const closeMenu = () => {
     setIsOpen(false);
+    document.body.classList.remove('no-scroll');
   };
 
   return (
