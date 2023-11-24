@@ -75,3 +75,7 @@ iframe {
   font-weight: 600;
   color: $gray-secondary;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

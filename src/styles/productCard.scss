@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border: 1px solid $gray;
   background: $main-white;
+  transition: all 0.3s ease-in;
 
   &:hover {
     border-color: $gray-primary;
