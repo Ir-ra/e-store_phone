@@ -28,6 +28,8 @@
     background-color: transparent;
     @extend %button;
 
+    transition: all 0.3s ease-in;
+
     &:hover {
       border-color: $gray-primary;
     }

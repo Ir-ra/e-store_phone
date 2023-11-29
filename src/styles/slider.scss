@@ -28,6 +28,8 @@
     background-color: transparent;
     border: 1px solid $gray-icons-placeholders;
 
+    transition: all 0.3s ease-in;
+
     @include onMobile {
       display: none;
     }
