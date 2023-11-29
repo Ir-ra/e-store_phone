@@ -12,6 +12,7 @@
 
   &__left {
     @extend %button;
+    transition: all 0.3s ease-in;
 
     &:hover {
       border-color: $gray-primary;
@@ -28,6 +29,7 @@
 
   &__rigth {
     @extend %button;
+    transition: all 0.3s ease-in;
 
     &:hover {
       border-color: $gray-primary;
@@ -44,6 +46,7 @@
 
   &__num {
     @extend %button;
+    transition: all 0.3s ease-in;
 
     &--active {
       background-color: black;

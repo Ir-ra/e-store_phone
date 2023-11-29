@@ -145,6 +145,7 @@
     height: 32px;
     border: 1px solid $gray;
     padding: 8px;
+    transition: all 0.3s ease-in;
 
     &:hover {
       border-color: $gray-primary;
@@ -174,6 +175,7 @@
     height: 32px;
     border: 1px solid $gray;
     padding: 8px;
+    transition: all 0.3s ease-in;
 
     &:hover {
       border-color: $gray-primary;
