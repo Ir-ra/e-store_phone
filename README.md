@@ -1,6 +1,6 @@
 # Phones catalog E-store 
 
-Mock concept for online shopping. Features multiple shopping categories and products for purchase, has a cart screen to display all products ready for checkout and favourite items screen.
+Mock concept for online shopping. Features multiple shopping categories and products for purchase, has a cart screen to display all products ready for checkout and favorite items screen.
 Implemented responsive template for desktop computers, tablets and mobile devices.
 
 ## DEMO
